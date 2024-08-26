@@ -1,0 +1,41 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <table>
+    <tr>
+      <td>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://static.zerochan.net/Resident.Evil.4.full.3921047.jpg"
+            class="card-img-top"
+            alt="Cat Meme"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Ada Wong and Ashley Graham from "Resident Evil 4".
+            </p>
+          </div>
+        </div>
+      </td>
+    </tr>
+
+    {% for i in list %}
+    <tr>
+      <td>
+        <div class="card" style="width: 18rem">
+          <img
+            src="https://static.zerochan.net/Resident.Evil.4.full.3921047.jpg"
+            class="card-img-top"
+            alt="Cat Meme"
+          />
+          <div class="card-body">
+            <p class="card-text">
+              Ada Wong and Ashley Graham from "Resident Evil 4". Item {{ i }}
+            </p>
+          </div>
+        </div>
+      </td>
+    </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock content %}
